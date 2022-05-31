@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+h2{
+  margin: 0;
+}
+.App{
+ min-height: 100vh; 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.card{
+  background-color: white;
+  padding: 20px;
+  width: min(400px,100%);
+  border-radius: 15px;
+  box-shadow: 1px 1px 7px 0 #000a;
+  position: relative;
+  justify-content: center;
+  
+}
+.card__quote{
+  font-size: 24px ;
+}
+.card__author{
+  font-size: 15px;
+}
+.card__btn{
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: block;
+  border: none;
+  color: white;
+  font-size: 22px;
+  position:relative ;
+  left: 100%;
+  transform: translateX(-100%);
+  cursor: pointer;
+  box-shadow: 1px 1px 5px 0 #000a;
+}
+.card__btn:active{
+  box-shadow: 0px 0px 0px 0 #000a;
+  transition: box-shadow 200ms ease;
+}
